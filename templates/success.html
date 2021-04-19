@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="{% static 'css/success.css' %}">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container-main">
+    <div class="success-container">
+        <h1>{{ successMessage }}</h1>
+    </div>
+    <div class="links">
+        <button class="backHome">
+            <a href="{% url 'posts' %}">Home</a>
+        </button>
+    </div>
+</div>
+</body>
+</html>

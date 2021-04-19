@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/createpost.css' %}">
+</head>
+<body>
+    <div class="post-create-header">
+        <h1>Create Post</h1>
+    </div>
+    <div class="post-create-form">
+        <form>
+
+            <label for="description">Description</label>
+            <input type="text" placeholder="post description" name="desc">
+            <label for="image">Post Image</label>
+            <input type="file" name="image">
+
+            <select name="author">
+                <option>test</option>
+            </select>
+
+        </form>
+    </div>
+</body>
+</html>

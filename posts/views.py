@@ -17,3 +17,7 @@ def get_post(request, post_id):
         'post': post
     }
     return render(request, 'posts/post.html', context)
+
+
+def get_post_create(request):
+    return render(request, 'posts/create_post.html')

@@ -7,7 +7,7 @@ class Author(models.Model):
     email = models.EmailField()
     phone_number = models.CharField(max_length=15)
     bio = models.TextField(null=True)
-    profile_Picture = models.ImageField()
+    profile_Picture = models.ImageField(default='default.png')
     date_created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

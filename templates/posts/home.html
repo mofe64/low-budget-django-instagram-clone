@@ -7,6 +7,15 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
 <body>
+    <div class="header">
+        <h1>Pentagram</h1>
+        <div class="btn-container">
+            <button class="btn">
+                <a href="{% url 'create_post' %}">Create Post</a>
+            </button>
+            <button class="btn">New User</button>
+        </div>
+    </div>
     <div class="container">
         {% for post in posts %}
             <div class="post-container">
